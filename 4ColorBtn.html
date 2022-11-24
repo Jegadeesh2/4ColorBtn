@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4ColorBtn</title>
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="container">
+      <div id="content">
+      <input type="text" id="text" placeholder="Type here..." /></div>
+      <br>
+      <button id="red-btn" onclick="red()">RED</button>
+      <button id="green-btn" onclick="green()">GREEN</button>
+      <button id="blue-btn" onclick="blue()">BLUE</button>
+    </div>
+  </body>
+
+  <!-- CSS -->
+
+  <style>
+    body{
+      background-color: grey;
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #text{
+      width: 20rem;
+      height: 2.5rem;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+    button{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    }
+    button:hover{
+    transform: scale(1.1);
+    }
+    #red-btn{
+    color: red;
+    }
+    #green-btn{
+    color: green;
+    }
+    #blue-btn{
+    color: blue;
+  }
+  </style>
+
+  <!-- SCRIPT -->
+
+  <script>
+    // Element
+    let textEle = document.getElementById('text')
+    //Functions
+    function red(){
+      textEle.style.color='red';
+    }
+    function green(){
+      textEle.style.color='green';
+    }
+    function blue(){
+      textEle.style.color='blue';
+    }
+  </script>
+</html>
